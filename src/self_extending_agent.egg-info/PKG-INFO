@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: self-extending-agent
+Version: 0.1.0
+Summary: Controlled self-extending agent with tool discovery, synthesis, sandbox verification, registration, and evidence-grounded answers.
+Requires-Python: >=3.11
+Requires-Dist: pydantic>=2.7
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: langchain>=1.2
+Requires-Dist: langchain-google-genai>=2.0
+Provides-Extra: daytona
+Requires-Dist: daytona>=0.100; extra == "daytona"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"

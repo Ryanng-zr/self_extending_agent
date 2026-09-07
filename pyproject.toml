@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "self-extending-agent"
+version = "0.1.0"
+description = "Controlled self-extending agent with tool discovery, synthesis, sandbox verification, registration, and evidence-grounded answers."
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.7",
+  "python-dotenv>=1.0",
+  "langchain>=1.2",
+  "langchain-google-genai>=2.0",
+]
+
+[project.optional-dependencies]
+daytona = ["daytona>=0.100"]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,10 @@
+pydantic>=2.7
+python-dotenv>=1.0
+langchain>=1.2
+langchain-google-genai>=2.0
+
+[daytona]
+daytona>=0.100
+
+[dev]
+pytest>=8.0
